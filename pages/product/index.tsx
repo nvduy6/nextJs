@@ -1,7 +1,7 @@
 import { GetStaticProps } from 'next'
 import Link from 'next/link'
 import React from 'react'
-
+import styles from './product.module.scss';
 type ProductsProps = {
   products:any[]
 }
@@ -10,9 +10,13 @@ const Product = ({products}: ProductsProps) => {
   console.log("product componet",products)
   if(!products) return null;
   return (
-    <div>{products.map(item=>(
-      <div key={item.id}>
+    <div className={styles.product}>{products.map(item=>(
+      <div key={item.id} className={styles.product__item}>
+        <img src={item.avatar} className={styles.product__image}/>
+        <div className={styles.product__name}>
         <Link href={`/product/${item.id}`}>{item.name}</Link>
+        <p>{item.createdAt}</p>
+        </div>
      </div>
     ))}</div>
   )
@@ -23,8 +27,9 @@ export const getStaticProps:GetStaticProps<ProductsProps>=async(context)=>{
   const data = await respone.json();
   return {
     props:{
-      products:data
-    }
+      products:data.map((item:any)=>({id:item.id,name:item.name,avatar:item.avatar,}))
+    },
+    revalidate:5
   }
 }
 
