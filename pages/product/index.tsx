@@ -4,7 +4,7 @@ import React from 'react'
 import styles from './product.module.scss';
 import useSWR from 'swr'
 type ProductsProps = {
-  products:any[]
+  products: any[]
 }
 // client
 const Product = () => {
@@ -22,22 +22,45 @@ const Product = () => {
   //   ))}</div>
   // )
 
-const url = `https://6110f09bc38a0900171f0ed0.mockapi.io/products`;
+  const url = `https://6110f09bc38a0900171f0ed0.mockapi.io/products`;
 
-// lay du lieu tuw APi
-const fetcher = async(url)=>await(await fetch(url)).json()
-const { data, error } = useSWR(url, fetcher, { dedupingInterval: 5000});
-if(!data) return <div>Loading....</div>
-if(error)return <div>Failed to load</div>
-return (
-  <div>
-    {data.map((item)=>(
-      <div key={item.id}>
-        {item.name}
+  // lay du lieu tuw APi
+  const fetcher = async (url) => await (await fetch(url)).json()
+  const { data, error } = useSWR(url, fetcher, { dedupingInterval: 5000 });
+  if (!data) return <div>Loading....</div>
+  if (error) return <div>Failed to load</div>
+  return (
+    <div className='grid grid-cols-5 gap-4'>
+      <div className='bg-slate-300 p-2'>
+        <h2 className='text-xl'>Danh mục sản phẩm
+        </h2>
+        <ul>
+          <li className='text-xl mt-2'>Đồ bộ</li>
+          <li className='text-xl mt-2'>Đô ngủ nam</li>
+          <li className='text-xl mt-2'>Đồ trẻ em</li>
+          <li className='text-xl mt-2'>Công sở</li>
+          <li className='text-xl mt-2'>Phụ kiện</li>
+        </ul>
       </div>
-    ))}
-  </div>
-)
+      <div className='bg-slate-500 col-span-4 p-2'>
+        <div className='grid grid-cols-5 gap-3'>
+        {data.map((item) => (
+          <div key={item.id}>  
+          <Link href={`/product/${item.id}`}>     
+                <img className='' src="http://bikinidolot.dichvuwordpress.com/wp-content/uploads/2020/08/bikini-8-300x400.jpg" alt="" /></Link>
+                <div className='text-center mt-2 mt-2'>
+                  <h3 className='text-xl'>{item.name}</h3>
+                  <p>320.000 đ</p>
+                </div>
+            
+          </div>
+        ))}
+        </div>
+       
+      </div>
+
+    </div>
+  )
 }
 
 

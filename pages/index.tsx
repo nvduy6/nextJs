@@ -10,7 +10,7 @@ const Home: NextPage = () => {
         </ul> */}
       {/* <Header/> */}
       <div className="container">
-        <div className='pt-36'>
+        <div className=''>
           <img src="https://img3.thuthuatphanmem.vn/uploads/2019/10/14/anh-lookbook-thoi-trang_113854100.jpg" alt="" />
         </div>
         <div className="mt-2">
@@ -20,7 +20,7 @@ const Home: NextPage = () => {
               <div className=''>
                 <img className='' src="http://bikinidolot.dichvuwordpress.com/wp-content/uploads/2020/08/bikini-8-300x400.jpg" alt="" />
                 <div className='text-center mt-2 mt-2'>
-                  <h3 >Bâdajdakdladk</h3>
+                  <h3 className='text-xl'>Bâdajdakdladk</h3>
                   <p>320.000 đ</p>
                 </div>
 
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
               <div >
                 <img src="http://bikinidolot.dichvuwordpress.com/wp-content/uploads/2020/08/bikini-8-300x400.jpg" alt="" />
                 <div className='text-center mt-2'>
-                  <h3>Bâdajdakdladk</h3>
+                  <h3 className='text-xl'>Bâdajdakdladk</h3>
                   <p>320.000 đ</p>
                 </div>
 
@@ -37,7 +37,7 @@ const Home: NextPage = () => {
               <div >
                 <img src="http://bikinidolot.dichvuwordpress.com/wp-content/uploads/2020/08/bikini-8-300x400.jpg" alt="" />
                 <div className='text-center mt-2'>
-                  <h3>Bâdajdakdladk</h3>
+                  <h3 className='text-xl'>Bâdajdakdladk</h3>
                   <p>320.000 đ</p>
                 </div>
 
@@ -45,7 +45,7 @@ const Home: NextPage = () => {
               <div >
                 <img src="http://bikinidolot.dichvuwordpress.com/wp-content/uploads/2020/08/bikini-8-300x400.jpg" alt="" />
                 <div className='text-center mt-2'>
-                  <h3>Bâdajdakdladk</h3>
+                  <h3 className='text-xl'>Bâdajdakdladk</h3>
                   <p>320.000 đ</p>
                 </div>
 
@@ -53,7 +53,7 @@ const Home: NextPage = () => {
               <div >
                 <img src="http://bikinidolot.dichvuwordpress.com/wp-content/uploads/2020/08/bikini-8-300x400.jpg" alt="" />
                 <div className='text-center mt-2'>
-                  <h3>Bâdajdakdladk</h3>
+                  <h3 className='text-xl'>Bâdajdakdladk</h3>
                   <p>320.000 đ</p>
                 </div>
 
@@ -61,7 +61,7 @@ const Home: NextPage = () => {
               <div className=''>
                 <img className='' src="http://bikinidolot.dichvuwordpress.com/wp-content/uploads/2020/08/bikini-8-300x400.jpg" alt="" />
                 <div className='text-center mt-2 mt-2'>
-                  <h3 >Bâdajdakdladk</h3>
+                  <h3 className='text-xl' >Bâdajdakdladk</h3>
                   <p>320.000 đ</p>
                 </div>
 
@@ -70,7 +70,7 @@ const Home: NextPage = () => {
               <div >
                 <img src="http://bikinidolot.dichvuwordpress.com/wp-content/uploads/2020/08/bikini-8-300x400.jpg" alt="" />
                 <div className='text-center mt-2'>
-                  <h3>Bâdajdakdladk</h3>
+                  <h3 className='text-xl'>Bâdajdakdladk</h3>
                   <p>320.000 đ</p>
                 </div>
 
@@ -78,7 +78,7 @@ const Home: NextPage = () => {
               <div >
                 <img src="http://bikinidolot.dichvuwordpress.com/wp-content/uploads/2020/08/bikini-8-300x400.jpg" alt="" />
                 <div className='text-center mt-2'>
-                  <h3>Bâdajdakdladk</h3>
+                  <h3 className='text-xl'>Bâdajdakdladk</h3>
                   <p>320.000 đ</p>
                 </div>
 
@@ -86,7 +86,7 @@ const Home: NextPage = () => {
               <div >
                 <img src="http://bikinidolot.dichvuwordpress.com/wp-content/uploads/2020/08/bikini-8-300x400.jpg" alt="" />
                 <div className='text-center mt-2'>
-                  <h3>Bâdajdakdladk</h3>
+                  <h3 className='text-xl'>Bâdajdakdladk</h3>
                   <p>320.000 đ</p>
                 </div>
 
@@ -94,7 +94,7 @@ const Home: NextPage = () => {
               <div >
                 <img src="http://bikinidolot.dichvuwordpress.com/wp-content/uploads/2020/08/bikini-8-300x400.jpg" alt="" />
                 <div className='text-center mt-2'>
-                  <h3>Bâdajdakdladk</h3>
+                  <h3 className='text-xl'>Bâdajdakdladk</h3>
                   <p>320.000 đ</p>
                 </div>
 
@@ -110,7 +110,7 @@ const Home: NextPage = () => {
               <div className=''>
                 <img className='' src="http://bikinidolot.dichvuwordpress.com/wp-content/uploads/2021/03/bikini-10-500x333.jpg" alt="" />
                 <div className='mt-2'>
-                  <h3 >Bâdajdakdladk</h3>
+                  <h3 className='text-xl' >Bâdajdakdladk</h3>
                   <p>Sản phẩm mới được thiết thời thượng</p>
                 </div>
 
@@ -119,7 +119,7 @@ const Home: NextPage = () => {
               <div >
                 <img src="http://bikinidolot.dichvuwordpress.com/wp-content/uploads/2021/03/bikini-10-500x333.jpg" alt="" />
                 <div className='mt-2'>
-                  <h3>Bâdajdakdladk</h3>
+                  <h3 className='text-xl'>Bâdajdakdladk</h3>
                   <p>Sản phẩm mới được thiết thời thượng</p>
                 </div>
 
@@ -127,7 +127,7 @@ const Home: NextPage = () => {
               <div >
                 <img src="http://bikinidolot.dichvuwordpress.com/wp-content/uploads/2021/03/bikini-10-500x333.jpg" alt="" />
                 <div className='mt-2'>
-                  <h3>Bâdajdakdladk</h3>
+                  <h3 className='text-xl'>Bâdajdakdladk</h3>
                   <p>Sản phẩm mới được thiết thời thượng</p>
                 </div>
 
@@ -135,7 +135,7 @@ const Home: NextPage = () => {
               <div >
                 <img src="http://bikinidolot.dichvuwordpress.com/wp-content/uploads/2021/03/bikini-10-500x333.jpg" alt="" />
                 <div className='mt-2'>
-                  <h3>Bâdajdakdladk</h3>
+                  <h3 className='text-xl'>Bâdajdakdladk</h3>
                   <p>Sản phẩm mới được thiết thời thượng</p>
                 </div>
 

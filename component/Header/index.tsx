@@ -37,10 +37,11 @@ const index = (props: Props) => {
         </div>
       </div>
       <ul className={styles.menu}>
-        <li><Link href="/" className={styles.menu__link}>menu 1</Link></li>
-        <li><Link href="/product" className={styles.menu__link}>menu 2</Link></li>
-        <li><Link href="/about" className={styles.menu__link}>menu 3</Link></li>
-        <li><Link href="" className={styles.menu__link}>menu 4</Link></li>
+        <li><Link href="/" className={styles.menu__link}>Trang chủ</Link></li>
+        <li><Link href="/" className={styles.menu__link}>Giới thiệu</Link></li>
+        <li><Link href="/product" className={styles.menu__link}>Sản phẩm</Link></li>
+        <li><Link href="/about" className={styles.menu__link}>Khuyến mãi</Link></li>
+        <li><Link href="" className={styles.menu__link}>Liên hệ</Link></li>
       </ul>
     </div>
   )
