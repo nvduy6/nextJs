@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import styles from './product.module.scss';
 import useSWR from 'swr'
+import userProducts from '../../hooks/use-product';
 type ProductsProps = {
   products: any[]
 }
@@ -21,12 +22,13 @@ const Product = () => {
   //    </div>
   //   ))}</div>
   // )
+const {data,error,create,mutate}=userProducts();
 
-  const url = `https://6110f09bc38a0900171f0ed0.mockapi.io/products`;
+  // const url = `https://6110f09bc38a0900171f0ed0.mockapi.io/products`;
 
-  // lay du lieu tuw APi
-  const fetcher = async (url) => await (await fetch(url)).json()
-  const { data, error } = useSWR(url, fetcher, { dedupingInterval: 5000 });
+  // // lay du lieu tuw APi
+  // const fetcher = async (url) => await (await fetch(url)).json()
+  // const { data, error } = useSWR(url, fetcher, { dedupingInterval: 5000 });
   if (!data) return <div>Loading....</div>
   if (error) return <div>Failed to load</div>
   return (
@@ -55,12 +57,13 @@ const Product = () => {
             
           </div>
         ))}
+        <button onClick={()=>mutate(create({name:"product A 1234"}))}>Them</button>
         </div>
        
       </div>
 
     </div>
-  )
+  );
 }
 
 
